@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ACicloVida">
 
+    <Button
+        android:id="@+id/btn_ciclo_vida"
+        android:layout_width="189dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="112dp"
+        android:text="Ciclo Vida"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="384dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,12 +22,19 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting("hbklhbkhb")
                 }
             }
         }
     }
 }
+
+    fun irActividad(
+    clase: Class<*>
+    ){
+        val intent = Intent(this, clase)
+        this.startActivity(intent)
+    }
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -41,6 +48,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     MovilesSoft2023ATheme {
-        Greeting("Android")
+        Greeting("hola")
     }
 }
