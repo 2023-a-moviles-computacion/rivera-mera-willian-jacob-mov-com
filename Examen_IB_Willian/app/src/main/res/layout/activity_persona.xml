@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#331717"
+    android:backgroundTint="#331717"
+    tools:context=".Persona">
+
+    <EditText
+        android:id="@+id/editText_idmotel"
+        android:layout_width="194dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="ID Motel"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText_vecesServicio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_vecesServicio"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fecha" />
+
+    <EditText
+        android:id="@+id/editText_fecha"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="AAA-MM-DD"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText_vecesServicio"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_vecesServicio"
+        app:layout_constraintTop_toBottomOf="@+id/editText_vecesServicio" />
+
+    <EditText
+        android:id="@+id/editText_vecesServicio"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="Ha usado el servicio"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText_domicilio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_domicilio"
+        app:layout_constraintTop_toBottomOf="@+id/editText_domicilio" />
+
+    <EditText
+        android:id="@+id/editText_domicilio"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="Domicilio"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText_persona"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_persona"
+        app:layout_constraintTop_toBottomOf="@+id/editText_persona" />
+
+    <EditText
+        android:id="@+id/editText_persona"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="188dp"
+        android:backgroundTint="#368E87"
+        android:text="INSERTAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText_fecha"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/editText_fecha"
+        app:layout_constraintTop_toBottomOf="@+id/editText_idmotel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
