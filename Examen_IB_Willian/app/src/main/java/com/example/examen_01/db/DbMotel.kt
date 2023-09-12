@@ -84,7 +84,7 @@ class DbMotel(
         var motel: DbMotel
         var cursor: Cursor? = null
 
-        cursor = db.rawQuery("SELECT * FROM t_asignatura", null)
+        cursor = db.rawQuery("SELECT * FROM t_persona", null)
 
         if (cursor.moveToFirst()) {
             do {
@@ -136,14 +136,14 @@ class DbMotel(
         values.put("fechaPublicacion", this.fechaInicio)
         values.put("abierto", this.abierto)
 
-        return db.update("t_motel", values, "id_motel="+this.idMotel, null)
+        return db.update("t_Motel", values, "id_motel="+this.idMotel, null)
     }
 
     fun deleteMotel(id: Int): Int{
         val dbHelper = DbHelper(this.context)
         val db: SQLiteDatabase = dbHelper.writableDatabase
 
-        return db.delete("t_motel", "id_motel="+(id+1), null)
+        return db.delete("t_Motel", "id_Motel="+(id+1), null)
     }
 
     override fun toString(): String {

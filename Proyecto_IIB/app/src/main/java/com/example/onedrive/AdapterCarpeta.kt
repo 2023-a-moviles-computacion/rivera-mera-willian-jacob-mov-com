@@ -43,8 +43,8 @@ class AdapterCarpeta(
 
         init {
             imageView = itemView.findViewById(R.id.imDirectorio)
-            textView = itemView.findViewById(R.id.tvnombreDirectorio)
-            textView2 = itemView.findViewById(R.id.tvalmacenamientoDirectorio)
+            textView = itemView.findViewById(R.id.tvTipoBus)
+            textView2 = itemView.findViewById(R.id.tvRutaBus)
 
         }
 
