@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#331717"
+    tools:context=".ActualizarPersona">
+
+    <EditText
+        android:id="@+id/et_upd_idPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="ID MOTEL"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <EditText
+        android:id="@+id/et_upd_nombPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_idPersona"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_idPersona"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_idPersona" />
+
+    <EditText
+        android:id="@+id/et_upd_domicilioPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="Domicilio"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_nombPersona"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_nombPersona"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_nombPersona" />
+
+    <EditText
+        android:id="@+id/et_upd_vecesServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="Ha usado el servicio"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_domicilioPersona"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_domicilioPersona"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_domicilioPersona" />
+
+    <EditText
+        android:id="@+id/et_upd_fechaTema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="AAAA-MM-DD"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_vecesServicio"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_vecesServicio"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_vecesServicio" />
+
+    <EditText
+        android:id="@+id/et_upd_idAlbPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="#D6B3B3"
+        android:ems="10"
+        android:hint="ID Motel"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_fechaTema"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_fechaTema"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_fechaTema" />
+
+    <Button
+        android:id="@+id/btn_upd_Persona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#368E87"
+        android:text="ACTUALIZAR DATOS"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_idAlbPersona"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_idAlbPersona"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_idAlbPersona" />
+</androidx.constraintlayout.widget.ConstraintLayout>
